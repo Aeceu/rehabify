@@ -1,7 +1,7 @@
-import style from "./page.module.css";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import Reveal from "@/components/Reveal";
+import style from "./page.module.css";
 
 const service = () => {
   const Acts = [
@@ -52,7 +52,7 @@ const service = () => {
         </p>
         {Acts.map((act, index) => (
           <Reveal key={index} className={style.textContainer}>
-            <FaStar className={style.logo} />
+            <FaStar as="icon" className={style.logo} />
             <p className={style.desc}>{act.text}</p>
           </Reveal>
         ))}

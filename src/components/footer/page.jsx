@@ -19,6 +19,8 @@ const Footer = () => {
           passHref
         >
           <Image
+            priority={true}
+            as="icon"
             className={styles.icon}
             src={fb}
             alt=""
@@ -33,6 +35,8 @@ const Footer = () => {
           passHref
         >
           <Image
+            priority={true}
+            as="icon"
             className={styles.icon}
             src={insta}
             alt=""
@@ -47,6 +51,8 @@ const Footer = () => {
           passHref
         >
           <Image
+            priority={true}
+            as="icon"
             className={styles.icon}
             src={twitter}
             alt=""
@@ -61,6 +67,8 @@ const Footer = () => {
           passHref
         >
           <Image
+            priority={true}
+            as="icon"
             className={styles.icon}
             src={yt}
             alt=""

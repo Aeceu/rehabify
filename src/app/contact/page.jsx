@@ -4,10 +4,11 @@ import Button from "@/components/Button/Button";
 const Contact = () => {
   return (
     <div className={style.container}>
-      <div className={style.title}>Let's keep in touch</div>
+      <div className={style.title}>Let&apos;s keep in touch</div>
       <div className={style.content}>
         <div className={style.imgContainer}>
           <Image
+            priority={true}
             as="image"
             src="/bg3.png"
             alt=""

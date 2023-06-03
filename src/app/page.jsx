@@ -6,7 +6,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.items}>
-        <Image as="image" src={bg} className={styles.img} alt="" />
+        <Image
+          as="image"
+          src={bg}
+          className={styles.img}
+          alt=""
+          priority={true}
+        />
       </div>
       <div className={styles.item}>
         <div className={styles.title}>Rehabify</div>

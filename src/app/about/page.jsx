@@ -13,9 +13,10 @@ const about = () => {
       </div>
       <div className={styles.imgContainer}>
         <Image
+          priority={true}
           as="image"
           src={pic1}
-          alt=""
+          alt="image"
           fill={true}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className={styles.img}
@@ -37,8 +38,8 @@ const about = () => {
             <br />
             <br />
             We are second-year Computer Science students at EARIST (Eulogio
-            "Amang" Rodriguez Institute of Science and Technology) currently
-            taking up Computer Science.
+            &quot;Amang&quot; Rodriguez Institute of Science and Technology)
+            currently taking up Computer Science.
             <br />
             <br />
             Our group shares a passion for technology and the endless
