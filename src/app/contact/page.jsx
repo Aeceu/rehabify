@@ -9,7 +9,6 @@ const Contact = () => {
         <div className={style.imgContainer}>
           <Image
             priority={true}
-            as="image"
             src="/bg3.png"
             alt=""
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

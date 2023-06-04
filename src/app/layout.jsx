@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import NavBar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/page";
 import { ThemeProvider } from "../../context/ThemeContext";
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,9 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="icon" as="icon" href="/favicon/favicon.ico" sizes="any" />
-      </head>
+        <link
+          rel="stylesheet"
+          href="./global.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+      </Head>
       <body className={inter.className}>
         <ThemeProvider>
           <div className="container">

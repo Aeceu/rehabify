@@ -52,7 +52,7 @@ const service = () => {
         </p>
         {Acts.map((act, index) => (
           <Reveal key={index} className={style.textContainer}>
-            <FaStar as="icon" className={style.logo} />
+            <FaStar className={style.logo} />
             <p className={style.desc}>{act.text}</p>
           </Reveal>
         ))}
